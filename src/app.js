@@ -4,12 +4,12 @@ const port = process.env.PORT || 5000
 const app = express();
 const cors = require('cors');
 
-const corsOptions ={
-    origin:'https://watch-react-js.vercel.app/', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-app.use(cors(corsOptions));
+// const corsOptions ={
+//     origin:'https://watch-react-js.vercel.app/', 
+//     credentials:true,            //access-control-allow-credentials:true
+//     optionSuccessStatus:200
+// }
+// app.use(cors(corsOptions));
 
 const userRouter = require("./router/userRouter");
 const productRouter = require("./router/productRouter");
